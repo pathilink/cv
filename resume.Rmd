@@ -1,0 +1,170 @@
+---
+title: Patrícia do Nascimento's Resume"
+author: Patrícia do Nascimento
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    css: ['css/custom_resume.css', 'css/styles.css', 'resume']
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: true
+---
+
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+library(tidyverse)
+library(glue)
+
+# Set this to true to have links turned into footnotes at the end of the document
+PDF_EXPORT <- TRUE 
+
+# Holds all the links that were inserted for placement at the end
+links <- c()
+
+source('parsing_functions.R')
+
+
+# First let's get the data, filtering to only the items tagged as
+# Resume items
+position_data <- read_csv('positions.csv') %>% 
+  filter(in_resume) %>% 
+  mutate(
+    # Build some custom sections by collapsing others
+    section = case_when(
+      section %in% c('job_positions', 'teaching_positions') ~ 'positions', 
+      section %in% c('online') ~ 'extra',
+      TRUE ~ section
+    )
+  ) 
+
+```
+
+
+Aside
+================================================================================
+
+
+Contato {#contact}
+--------------------------------------------------------------------------------
+
+
+
+- <i class="fa fa-envelope"></i> pathilink@gmail.com
+<!-- - <i class="fa fa-twitter"></i> Twitter: @pathilink -->
+- <i class="fa fa-github"></i> GitHub [/pathilink](https://github.com/pathilink/)
+- <i class="fab fa-linkedin-in"></i> LinkedIn [/pathilink](https://www.linkedin.com/in/pathilink/)
+- <i class="fa fa-phone"></i> (11) 98765-4321
+
+
+
+Hard Skills {#skills}
+--------------------------------------------------------------------------------
+
+
+```{r}
+skills <- tribble(
+  ~skill,               ~level,
+  "Python",             4,
+  "R",                  3,
+  "SQL",                2,
+  "BigQuery",           2
+)
+build_skill_bars(skills)
+```
+
+Projetos {#open-source}
+--------------------------------------------------------------------------------
+
+Projetos disponíveis em `github.com/pathilink/<name>`
+
+
+- `name1`: explanation of the content.
+- `name2`: explanation of the content.
+
+
+
+Idiomas {#skills}
+--------------------------------------------------------------------------------
+
+
+```{r}
+skills <- tribble(
+  ~skill,               ~level,
+  "Inglês",             5,
+  "Espanhol",           3
+  
+)
+build_skill_bars(skills)
+```
+
+
+Voluntariado {#open-source}
+--------------------------------------------------------------------------------
+[/PyLadiesSP](https://www.linkedin.com/company/pyladiessp/)
+
+
+Disclaimer {#disclaimer}
+--------------------------------------------------------------------------------
+
+Feito com [**pagedown**](https://github.com/rstudio/pagedown). 
+
+Código disponível em [github.com/pathilink/cv](https://github.com/pathilink/cv).
+
+Atualizado em `r Sys.Date()`.
+
+
+
+
+Main
+================================================================================
+
+Patrícia do Nascimento {#title}
+--------------------------------------------------------------------------------
+
+```{r}
+intro_text <- "Bacharel em Ciências Sociais com experiência em análise de dados. Tenho paixão por dados e pelo impacto positivo que isso cria aos negócios.
+
+Competências chave:
+- Extrair, transformar e carregar dados (ETL)
+- Análise exploratória de dados (EDA)
+- Programação
+- Trabalho em equipe
+- Vontade de aprender
+
+Atualmente busco uma posição como analista que me permita explorar os dados e criar insights.
+"
+
+
+#cat(sanitize_links(intro_text))    # uncomment to print intro_text
+```
+
+
+
+Educação {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('education')
+```
+
+
+
+Experiência {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('positions')
+```
+
+e-Learning {data-icon=laptop} 
+--------------------------------------------------------------------------------
+
+
+```{r}
+position_data %>% print_section('extra')
+```
+
+

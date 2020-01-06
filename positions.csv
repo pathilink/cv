@@ -1,0 +1,15 @@
+section,in_resume,title,loc,institution,start,end,description_1,description_2,description_3
+education,TRUE,Ciências Sociais,Universidade de São Paulo,"São Paulo, SP",2009/02,2013/12,"Estudos nas 3 grandes áreas: Sociologia, Antropologia e Ciência Política",Ênfase em Ciência Política,
+education,TRUE,Aluna especial ,Universidade de São Paulo,"São Paulo, SP",2018,2019,Introdução aos Sistemas de Bancos de Dados,Princípios de Interação Homem Computador,Aprendizagem de Máquina
+job_positions,TRUE,Estagiária,Universidade de São Paulo – IME,"São Paulo, SP",2017/11,2018/04,Auxílio à Secretaria de pós graduação.,NA,NA
+job_positions,TRUE,Estagiária,Accenture,"São Paulo, SP",2018/04,2018/10,Acompanhamento de trabalhos na área de modelagem de dados em R.,Desenvolvimento ETL.,NA
+job_positions,TRUE,Analista de dados,Vitrio,"São Paulo, SP",2019/04,2019/11,"Extração e manipulação de dados em Python, R e SQL.",Disponibilização dos dados no BigQuery.,NA
+teaching_positions,TRUE,Professora de Sociologia,São Paulo Governo do Estado,"São Paulo, SP",2015/05,2017/12,Ensino de Sociologia ao Ensino Médio.,NA,NA
+teaching_positions,TRUE,Monitora,Universidade de São Paulo – IME,"São Paulo, SP",2019/01,2019/01,Auxílio às dúvidas dos alunos.,NA,NA
+online,TRUE,Intermediate Python for Data Science,DataCamp,NA,2019,NA,NA,NA,NA
+online,TRUE,Creating New BigQuery Datasets and Visualizing Insights,Coursera,NA,2019,NA,NA,NA,NA
+online,TRUE,Exploring and Preparing your Data with BigQuery,Coursera,NA,2019,NA,NA,NA,NA
+online,FALSE,Introduction to Data Science in Python Course,DataCamp,NA,2019,NA,NA,NA,NA
+online,FALSE,Introduction to Python Course,DataCamp,NA,2019,NA,NA,NA,NA
+online,FALSE,Introduction to R Course,DataCamp,NA,2018,NA,NA,NA,NA
+online,TRUE,Intro to SQL for Data Science,DataCamp,NA,2018,NA,NA,NA,NA
