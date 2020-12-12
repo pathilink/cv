@@ -83,7 +83,7 @@ Projects available at `github.com/pathilink/<name>`
 
 - `Kaggle/tree/master/world_ happiness`: Exploratory data analysis about happiness in the world. 
 
-- `Kaggle/blob/master/glass door_br.ipynb`: Word cloud over data area.
+- `Kaggle/blob/master/glass door_br.ipynb`: Word cloud about data area.
 
 
 
