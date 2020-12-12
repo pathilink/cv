@@ -47,7 +47,7 @@ Aside
 ================================================================================
 
 
-Contato {#contact}
+Contact {#contact}
 --------------------------------------------------------------------------------
 
 
@@ -67,41 +67,42 @@ Hard Skills {#skills}
 ```{r}
 skills <- tribble(
   ~skill,               ~level,
-  "Python",             4,
-  "R",                  3,
-  "SQL",                2,
-  "BigQuery",           2
+  "Python",             0,
+  "R",                  0,
+  "SQL",                0,
+  "BigQuery",           0
 )
 build_skill_bars(skills)
 ```
 
-Projetos {#open-source}
+Projects {#open-source}
 --------------------------------------------------------------------------------
 
-Projetos disponíveis em `github.com/pathilink/<name>`
+Projects available at `github.com/pathilink/<name>`
 
 
-- `name1`: explanation of the content.
-- `name2`: explanation of the content.
+- `Kaggle/tree/master/world_ happiness`: Exploratory data analysis about happiness in the world. 
+
+- `Kaggle/blob/master/glass door_br.ipynb`: Word cloud over data area.
 
 
 
-Idiomas {#skills}
+Idioms {#skills}
 --------------------------------------------------------------------------------
 
 
 ```{r}
 skills <- tribble(
   ~skill,               ~level,
-  "Inglês",             5,
-  "Espanhol",           3
+  "English",             0,
+  "Spanish",             0
   
 )
 build_skill_bars(skills)
 ```
 
 
-Voluntariado {#open-source}
+Volunteering {#open-source}
 --------------------------------------------------------------------------------
 [/PyLadiesSP](https://www.linkedin.com/company/pyladiessp/)
 
@@ -109,11 +110,11 @@ Voluntariado {#open-source}
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Feito com [**pagedown**](https://github.com/rstudio/pagedown). 
+Made with [**pagedown**](https://github.com/rstudio/pagedown). 
 
-Código disponível em [github.com/pathilink/cv](https://github.com/pathilink/cv).
+Code available at [github.com/pathilink/cv](https://github.com/pathilink/cv).
 
-Atualizado em `r Sys.Date()`.
+Updated `r Sys.Date()`.
 
 
 
@@ -125,25 +126,19 @@ Patrícia do Nascimento {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-intro_text <- "Bacharel em Ciências Sociais com experiência em análise de dados. Tenho paixão por dados e pelo impacto positivo que isso cria aos negócios.
+intro_text <- 
+"DATA ANALYST
 
-Competências chave:
-- Extrair, transformar e carregar dados (ETL)
-- Análise exploratória de dados (EDA)
-- Programação
-- Trabalho em equipe
-- Vontade de aprender
-
-Atualmente busco uma posição como analista que me permita explorar os dados e criar insights.
+Social scientist with experience in data analysis. Interest in exploring data, gaining insights and visualizing the business impact.
 "
 
 
-#cat(sanitize_links(intro_text))    # uncomment to print intro_text
+cat(sanitize_links(intro_text))    # uncomment to print intro_text
 ```
 
 
 
-Educação {data-icon=graduation-cap data-concise=true}
+Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -152,7 +147,7 @@ position_data %>% print_section('education')
 
 
 
-Experiência {data-icon=suitcase}
+Work experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
 ```{r}
