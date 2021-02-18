@@ -1,5 +1,5 @@
 ---
-title: Patrícia do Nascimento's Resume"
+title: Patrícia's Resume"
 author: Patrícia do Nascimento
 date: "`r Sys.Date()`"
 output:
@@ -55,8 +55,10 @@ Contact {#contact}
 - <i class="fa fa-envelope"></i> pathilink@gmail.com
 <!-- - <i class="fa fa-twitter"></i> Twitter: @pathilink -->
 - <i class="fa fa-github"></i> GitHub [/pathilink](https://github.com/pathilink/)
+- <i class="fas fa-globe"></i> Portfolio [/pathilink](https://pathilink.github.io/)
+- <i class="fab fa-kaggle"></i> Kaggle [/pathilink](https://www.kaggle.com/pathilink)
 - <i class="fab fa-linkedin-in"></i> LinkedIn [/pathilink](https://www.linkedin.com/in/pathilink/)
-- <i class="fa fa-phone"></i> (11) 98765-4321
+- <i class="fa fa-phone"></i> +55 11 _____ ____
 
 
 
@@ -69,8 +71,8 @@ skills <- tribble(
   ~skill,               ~level,
   "Python",             0,
   "R",                  0,
-  "SQL",                0,
-  "BigQuery",           0
+  "SQL",                0
+  
 )
 build_skill_bars(skills)
 ```
@@ -94,6 +96,7 @@ Idioms {#skills}
 ```{r}
 skills <- tribble(
   ~skill,               ~level,
+  "Portuguese",          0,
   "English",             0,
   "Spanish",             0
   
@@ -129,7 +132,6 @@ Patrícia do Nascimento {#title}
 intro_text <- 
 "DATA ANALYST
 
-Social scientist with experience in data analysis. Interest in exploring data, gaining insights and visualizing the business impact.
 "
 
 
@@ -147,19 +149,21 @@ position_data %>% print_section('education')
 
 
 
-Work experience {data-icon=suitcase}
---------------------------------------------------------------------------------
-
-```{r}
-position_data %>% print_section('positions')
-```
-
-e-Learning {data-icon=laptop} 
+extracurricular {data-icon=laptop} 
 --------------------------------------------------------------------------------
 
 
 ```{r}
 position_data %>% print_section('extra')
+```
+
+
+
+Work experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('positions')
 ```
 
 
